@@ -1,0 +1,16 @@
+target/
+*.log
+logs/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Local maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Generated backup files
+pom.xml.versionsBackup
