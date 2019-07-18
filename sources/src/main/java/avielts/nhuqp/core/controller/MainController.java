@@ -2,10 +2,7 @@ package avielts.nhuqp.core.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import avielts.nhuqp.core.model.UserEntity;
 import avielts.nhuqp.core.repository.UserRepository;
 
@@ -21,13 +18,31 @@ public class MainController {
     String addNewUser (@RequestParam String name
 			, @RequestParam String email) {
 
-		UserEntity n = new UserEntity();
-		n.setName(name);
-		n.setEmail(email);
-		userRepository.save(n);
+		System.out.println(name);
+		System.out.println(email);
+//
+//		UserEntity n = new UserEntity();
+//		n.setName(name);
+//		n.setEmail(email);
+//		userRepository.save(n);
 		return "Saved";
 	}
-	
+
+	@PostMapping(path="/add")
+	public @ResponseBody
+	String addNewUserPost (@RequestParam String name
+			, @RequestParam String email) {
+
+		System.out.println(name);
+		System.out.println(email);
+//
+//		UserEntity n = new UserEntity();
+//		n.setName(name);
+//		n.setEmail(email);
+//		userRepository.save(n);
+		return "Saved";
+	}
+
 	@GetMapping(path="/all")
 	public @ResponseBody
     Iterable<UserEntity> getAllUsers() {
