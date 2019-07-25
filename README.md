@@ -31,3 +31,8 @@ Video course online server build by Spring Boot.
 
 - IDE: IntelliJ IDEA
 - Note: Markdowns
+
+## Refer
+
+- https://javabrains.io/topics/
+- https://demo-learnpress.thimpress.com/learnpress/lp-courses/the-ultimate-guide-to-the-best-wordpress-lms-plugin/lessons/lesson-with-google-docs-slides-copy-2/
